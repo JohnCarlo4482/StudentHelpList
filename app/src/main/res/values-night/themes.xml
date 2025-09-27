@@ -1,0 +1,24 @@
+<resources>
+    <!-- Blue Theme Colors -->
+    <color name="blue_primary">#2196F3</color>
+    <color name="blue_primary_dark">#1976D2</color>
+    <color name="blue_primary_light">#BBDEFB</color>
+
+    <!-- Accent Colors -->
+    <color name="blue_accent">#03DAC6</color>
+    <color name="blue_accent_dark">#018786</color>
+
+    <!-- Text Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#757575</color>
+    <color name="light_gray">#BDBDBD</color>
+
+    <!-- Background Colors -->
+    <color name="background_light">#FFFFFF</color>
+    <color name="background_dark">#121212</color>
+
+    <!-- Button Colors -->
+    <color name="button_blue">#2196F3</color>
+    <color name="button_blue_pressed">#1976D2</color>
+</resources>

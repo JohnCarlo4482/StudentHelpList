@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/bgImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/john"
+        android:contentDescription="Background" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="24dp">
+
+            <ImageView
+                android:id="@+id/logoImage"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/loggo"
+                android:contentDescription="App Logo"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/formTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign In"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:shadowColor="#80000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+                android:layout_marginBottom="32dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                card_view:cardCornerRadius="20dp"
+                card_view:cardElevation="10dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardBackgroundColor="#2196F3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <EditText
+                        android:id="@+id/etUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Username"
+                        android:inputType="textPersonName"
+                        android:background="@drawable/textbox_gradient"
+                        android:padding="14dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#888888"
+                        android:drawableLeft="@drawable/ic_person_black_24dp"
+                        android:drawablePadding="8dp"
+                        android:elevation="6dp"
+                        android:layout_marginBottom="16dp" />
+
+                    <EditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:background="@drawable/textbox_gradient"
+                        android:padding="14dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#888888"
+                        android:drawableLeft="@drawable/ic_lock_black_24dp"
+                        android:drawablePadding="8dp"
+                        android:elevation="6dp"
+                        android:layout_marginBottom="24dp" />
+
+                    <Button
+                        android:id="@+id/btnLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Login"
+                        android:textSize="16sp"
+                        android:background="@drawable/button_gradient"
+                        android:textColor="#FFFFFF"
+                        android:elevation="6dp"
+                        android:layout_marginBottom="16dp" />
+
+                    <TextView
+                        android:id="@+id/tvSignUp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Don't have an account? Sign Up"
+                        android:textSize="14sp"
+                        android:textColor="#FFFFFF"
+                        android:textColorLink="#2196F3"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:focusable="true" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
